@@ -23,6 +23,19 @@ jobs:
             - ~/.android/build-cache
             - ~/.android/cache
       - run:
+          name: Download and Install Android SDK
+          command: |
+            mkdir -p /usr/local/android-sdk-linux
+            wget -q https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
+            unzip -q commandlinetools-linux-6858069_latest.zip -d /usr/local/android-sdk-linux
+            rm commandlinetools-linux-6858069_latest.zip
+            echo 'export ANDROID_HOME="/usr/local/android-sdk-linux"' >> $BASH_ENV
+            echo 'export PATH="$ANDROID_HOME/cmdline-tools/tools/bin:$PATH"' >> $BASH_ENV
+            source $BASH_ENV
+      - run:
+          name: Accept Android licenses
+          command: yes | sdkmanager --licenses
+      - run:
           name: Set Android SDK Location
           command: echo "sdk.dir=/usr/local/android-sdk-linux" > /home/circleci/project/local.properties
       - run:
