@@ -26,7 +26,7 @@ jobs:
           name: Download and Install Android SDK
           command: |
             sudo mkdir -p /usr/local/android-sdk-linux
-            wget -q https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
+            sudo wget -q https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
             unzip -q commandlinetools-linux-6858069_latest.zip -d /usr/local/android-sdk-linux
             rm commandlinetools-linux-6858069_latest.zip
             echo 'export ANDROID_HOME="/usr/local/android-sdk-linux"' >> $BASH_ENV
