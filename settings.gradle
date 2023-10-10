@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+
+rootProject.name = "Artwork App"
+include ':app'
+include ':core'
+include ':expo'
+include ':favorite'

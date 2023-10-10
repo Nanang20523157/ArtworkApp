@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_expo">Expo Page</string>
+    <string name="expo_dummy">This is expo of %1$s</string>
+</resources>

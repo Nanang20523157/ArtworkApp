@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  custom  -->
+<!--    <color name="navy_blue">#FF00536D</color>-->
+    <color name="tosca">#FF06A6AE</color>
+<!--    <color name="orange">#FFF7AD4B</color>-->
+<!--    <color name="pink">#FFEF8186</color>-->
+    <color name="silver_gray">#FFCCC8C8</color>
+    <color name="smoke_gray">#FF666661</color>
+    <color name="metallic_gray">#FF38393C</color>
+    <color name="steel_gray">#FF252525</color>
+    <color name="dark_gray">#FF1F1F1F</color>
+    <color name="dark_maroon">#FF2B0A0A</color>
+    <color name="child_red">#EC2626</color>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    //toolbar title
+    <string name="artwork_studio">Artwork Studio</string>
+    //item list artwork
+    <string name="image_content">Image Content</string>
+    <string name="text_primary">Sample of title text</string>
+    <string name="text_subtitle">by Art</string>
+
+    //information
+    <string name="data_empty">Empty data..</string>
+    <string name="something_wrong">Oops.. something went wrong</string>
+</resources>

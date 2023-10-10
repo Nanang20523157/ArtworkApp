@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Artwork App</string>
+    <string name="artwork_studio_caps">ARTWORK STUDIO</string>
+    //drawerLayout
+    <string name="nav_header_title">Nanang Kurniawan</string>
+    <string name="nav_header_subtitle">a185dkx4260@bangkit.academy</string>
+
+    //menu
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="menu_expo">Expo</string>
+
+    //content description
+    <string name="con_des_help">call-center floating button</string>
+
+    //detail fragment
+    <string name="display_at_label">display at:</string>
+    <string name="display_at_content">Neolithic period, Liangzhu culture, c. 3300–2400 B.C. Neolithic period, Liangzhu culture, c. 3300–2400 B.C.</string>
+    <string name="desc_label">Description</string>
+    <string name="lorem_desc"><![CDATA[\u3000\u3000orn of Jewish Margherita Andreotti, Chicago (1994), p. 150–151, p. 150–15of Chicago (1994), p. 150–151.]]></string>
+    <string name="dimensions_label">Dimens:</string>
+    <string name="image_ic_category">Image icon category</string>
+
+    //call service FAB &amp; Snackbar favorite
+    <string name="under_development">This feature under development..</string>
+    <string name="added_favorite">Added to favorites</string>
+    <string name="removed_favorites">Removed from favorites</string>
+
+</resources>
