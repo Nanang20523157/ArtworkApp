@@ -7,6 +7,10 @@ jobs:
   build:
     docker:
       - image: 'cimg/openjdk:17.0.4'
+    environment:
+      # Set environment variables for Android SDK
+      ANDROID_HOME: "/home/circleci/android-sdk"
+      ANDROID_SDK_ROOT: $ANDROID_HOME
     steps:
       - checkout
       - restore_cache:
@@ -23,8 +27,14 @@ jobs:
             - ~/.android/build-cache
             - ~/.android/cache
       - run:
-          environment:
-            ANDROID_HOME: '/home/circleci/project/local.properties'
+          name: Install Android SDK Tools
+          command: |
+            mkdir -p $ANDROID_HOME
+            wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
+            unzip commandlinetools-linux-6858069_latest.zip -d $ANDROID_HOME
+            yes | $ANDROID_HOME/cmdline-tools/bin/sdkmanager --licenses
+            $ANDROID_HOME/cmdline-tools/bin/sdkmanager "platform-tools" "build-tools;30.0.2" "platforms;android-30" "extras;android;m2repository"
+      - run:
           name: Run Build
           command: ./gradlew build
       - store_artifacts: 
