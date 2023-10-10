@@ -23,6 +23,8 @@ jobs:
             - ~/.android/build-cache
             - ~/.android/cache
       - run:
+          environment:
+            ANDROID_HOME: '/home/circleci/project/local.properties'
           name: Run Build
           command: ./gradlew build
       - store_artifacts: 
