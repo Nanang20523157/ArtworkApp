@@ -24,10 +24,10 @@ jobs:
             - ~/.android/cache
       - run:
           name: Set Android SDK Location
-          command: echo "C\:\\Users\\akuna\\AppData\\Local\\Android\\Sdk" > /home/circleci/project/local.properties
+          command: echo "sdk.dir=C\:\\Users\\akuna\\AppData\\Local\\Android\\Sdk" > /home/circleci/project/local.properties
       - run:
           environment:
-            ANDROID_HOME: 'C\:\\Users\\akuna\\AppData\\Local\\Android\\Sdk'  # Sesuaikan dengan lokasi SDK yang sama
+            ANDROID_HOME: 'C\:\\Users\\akuna\\AppData\\Local\\Android\\Sdk'
           name: Run Build
           command: ./gradlew build
       - store_artifacts:
