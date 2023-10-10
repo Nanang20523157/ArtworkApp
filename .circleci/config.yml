@@ -24,7 +24,7 @@ jobs:
             source $BASH_ENV
       - run:
           name: Accept Android licenses
-          command: yes | sudo sdkmanager --licenses
+          command: yes | sdkmanager --licenses
       - run:
           name: Set Android SDK Location
           command: echo "sdk.dir=/usr/local/android-sdk-linux" > /home/circleci/project/local.properties
