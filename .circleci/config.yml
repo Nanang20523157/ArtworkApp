@@ -37,6 +37,7 @@ jobs:
           key: android-orb-v1-
       - run:
           command: |
+            #!/bin/bash
               yes | sdkmanager --licenses
               yes | sdkmanager --update
           name: Accept Android Licenses
