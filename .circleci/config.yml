@@ -10,9 +10,8 @@ jobs:
       - checkout
       - restore_cache:
           key: android-orb-v1-
-      - run: |
-          node --version
-          java --version
+      - run: java --version
+      - run: node --version
       - run:
           name: Chmod permissions
           command: sudo chmod +x ./gradlew
